@@ -1,0 +1,35 @@
+
+.client{
+    padding: 40px 0;
+    .container{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+.client-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.client-content{
+    max-width: 336px;
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 17px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.5;
+        color: var( --text-gray);
+    }
+
+}
+.client-item{
+    width: 150px;
+    img{
+        width: 100%;
+    }
+}
+

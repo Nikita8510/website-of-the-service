@@ -1,0 +1,76 @@
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+img,
+span,
+input,
+strong,
+button,
+textarea,
+ion-icon { display: block; }
+
+img { height: auto; }
+
+ion-icon {
+  pointer-events: none;
+  color: var(--white);
+}
+
+button,
+input,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button { cursor: pointer; }
+
+input,
+textarea { width: 100%; }
+
+address { font-style: normal; }
+
+html {
+  font-size: 16px;
+  font-family: var(--ff-open-sans);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--space-cadet);
+  color: var(--cadet-blue-crayola);
+  overflow-x: hidden;
+}
+
+
+
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

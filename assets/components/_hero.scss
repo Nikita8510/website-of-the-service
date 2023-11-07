@@ -1,0 +1,47 @@
+
+
+// section-hero
+
+.hero-banner{
+    position: absolute;
+    top: 100px;
+    right: 0;
+   
+    max-width: 50%;
+    z-index: -1;
+   
+}
+.hero{
+   
+    padding: 230px 0 218px;
+   
+}
+
+.hero-content{
+    position: relative;
+    max-width: 471px;
+    h1{
+        margin-bottom: 35px;
+        font-size: 3rem;
+    }
+    p{
+        margin-bottom: 35px;
+        color: var(--text-gray);
+        line-height: 1.5;
+        font-size: 17px;
+    }
+    .ornament-img{
+       
+        display: block;
+        position: absolute;
+        bottom: -128px;
+        left: -60px;
+        width: 411px;
+        animation: rotate360 15s linear infinite reverse;
+        z-index: -1;
+    }
+}
+.hero-btn{
+    background-color: var(--blue);
+}
+

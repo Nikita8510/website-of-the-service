@@ -1,0 +1,113 @@
+// header
+
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 40px 0;
+    z-index: 1;
+    
+   
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+header.active{
+    position: fixed;
+    top: -101px;
+    z-index: 4;
+    background-color: #ffffff;
+    animation: slideIn 0.5s ease-out forwards;
+}
+@keyframes slideIn {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100%); }
+  }
+    .navbar-nav{
+    display: flex;
+    gap: 10px;
+    a{
+        padding: 0 15px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    a:hover{
+        color: var(--blue);
+    }
+}
+
+.nav-toggle{
+   display: none;
+}
+
+
+
+// breakpoints
+
+@media (max-width : 992px){
+    .nav-toggle{
+        display: block;
+        width: 20px;
+        height: 20px;
+        img{
+            cursor: pointer;
+        }
+    }
+    
+
+    .show-icon .nav__toggle-menu {
+        opacity: 0;
+        transform: rotate(91deg);
+    }
+    .nav__toggle-close {
+        opacity: 0;
+    }
+    .show-icon .nav__toggle-close {
+        opacity: 1;
+        transform: rotate(90deg);
+    }
+   
+    .nav-toggle{
+        position: relative;
+    }
+    .nav__toggle-menu, .nav__toggle-close{
+       position: absolute;
+        transition: opacity 0.1s, transform 0.4s;
+    }
+
+
+    .navbar-collapse.show-menu {
+        max-height: calc(100vh - 63px);
+        opacity: 1;
+        top: 100px;
+        pointer-events: initial;
+        padding: 40px 0px;
+        z-index: 4;
+    }
+   .navbar-collapse{
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    opacity: 0;
+    width: calc(100% - 30px);
+    transition: top 0.4s, opacity 0.3s;
+    pointer-events: none;
+    box-shadow: 0 4px 8px 0 rgba(219, 219, 219, 0.2), 0 6px 20px 0 rgba(206, 206, 206, 0.19);
+    z-index: -4;
+   }
+   .navbar-nav{
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+   }
+
+
+
+}
+
+

@@ -1,0 +1,16 @@
+.btn{
+    font-family: var(--ff-barlow);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: var(--fw-600);
+    padding: 20px 40px;
+    max-width: max-content;
+    border-radius: 50px;
+    transition: var(--transition-2);
+}
+
+.btn:hover{
+    background-color: var(--background-gray);
+    
+}

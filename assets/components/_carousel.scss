@@ -1,0 +1,116 @@
+.carousel{
+    padding: 150px 0;
+    text-align: center;
+    h2{
+        margin-bottom: 20px;
+    }
+    .container{
+        position: relative;
+        justify-content: center;
+    }
+}
+
+
+.carousel-box{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.carousel-img{
+    min-width: 400px;
+    min-height: 120px;
+}
+
+.carousel-content{
+ text-align: left;
+ max-width: 420px;
+}
+
+
+.carousel-img2{
+    position: absolute;
+    right: -70px;
+    max-width: 50%;
+    z-index: -1;
+    top: 45px;
+}
+
+
+
+// карусель
+
+.carousel-reviews{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-text{
+    min-width: 400px;
+    padding: 40px;
+}
+.one-time{
+    max-width: 900px;
+}
+
+.slick-dot {
+    position: absolute;
+    left: 436px;
+    bottom: 83px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.slick-dot li button {
+    background: #E7F0FC;
+    border: none; // без рамки
+    border-radius: 50%; // радиус закругления
+    font-size: 0px;
+    height: 15px; // высота точки
+    width: 15px; // ширина точки
+    margin: 13px; // отступы между точками
+    outline: none; // убираем обводку
+}
+.slick-dot li[class="slick-active"] button {
+    background: var(--blue);
+}
+
+.carousel-text{
+    h4{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 17px;
+        max-width: 412px;
+        line-height: 1.5;
+        color: var( --text-gray);
+    }
+}
+
+
+
+.carousel-img3{
+    position: relative;
+    width: 389px;
+    height: 389px;
+    margin: 50px 0 50px;
+    box-shadow: 31px 34px 30px -13px #e8e8e8;
+    border-radius: 50% 0px 50% 50%;
+    .border-img{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
+    .dot-img{
+        position: absolute;
+        right: -56px;
+        top: -61px;
+        z-index: -1;
+    }
+}
+
